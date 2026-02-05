@@ -228,5 +228,19 @@ apt install ufw - if have not in ubuntu
 docker container prune -f
 ```
 
+<hr>
+> # Reset Password CMD
+
+```
+docker-compose down
+docker-compose up -d
+docker exec -it odoo_postgres psql -U odoo -d postgres -c "\l"
+
+docker exec -it odoo_app bash
+odoo shell -d abc_company --db_host=postgres --db_user=odoo --db_password=odoo123
+
+env['res.users'].search([('login','=','admin')]).write({'password':'NewAdmin123'}
+```
+
 
 
