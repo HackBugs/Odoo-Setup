@@ -5,6 +5,7 @@
 ### install docker in ubuntu server form - https://docs.docker.com/engine/install/ubuntu/
 ### after installing successfully install Odoo inside docker - https://www.digitalocean.com/community/tutorials/how-to-install-odoo-with-docker-on-ubuntu - not follow all steps only till create mkdir
 
+## 0. instsll all text editor in ubuntu
 ```
 apt install vim
 apt install nano
