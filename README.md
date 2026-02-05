@@ -85,7 +85,7 @@ volumes:
 
 ## ▶️ Run Commands (IMPORTANT)
 
-Old data hata ke fresh start karo 👇
+1. Old data hata ke fresh start karo 👇
 
 ```bash
 docker-compose down -v
@@ -94,16 +94,21 @@ docker-compose down -v
 docker-compose up -d
 ```
 
-Check containers:
+2. Check containers:
 
 ```bash
 docker ps
 ```
 
-Logs:
+3. Logs:
 
 ```bash
 docker logs odoo_app --tail=20
+```
+
+4. check ip:
+```
+ip a
 ```
 <hr>
 
