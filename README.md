@@ -236,6 +236,8 @@ docker container prune -f
 docker-compose down
 docker-compose up -d
 docker exec -it odoo_postgres psql -U odoo -d postgres -c "\l"
+docker exec -it odoo_postgres psql -U odoo -d postgres
+
 
 docker exec -it odoo_app bash
 odoo shell -d abc_company --db_host=postgres --db_user=odoo --db_password=odoo123
