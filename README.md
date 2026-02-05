@@ -206,6 +206,11 @@ Next logical steps (choose one 👇):
 > # Commands
 
 ```
+docker-compose stop
+docker-compose down
+docker volume rm odoo_db
+
+
 docker compose version
 apt remove docker-compose -y
 apt install docker-compose-plugin -y
