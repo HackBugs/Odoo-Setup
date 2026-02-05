@@ -1,9 +1,9 @@
 # Odoo-Setup
 
 ### Install VirtualBox - https://www.virtualbox.org/wiki/Linux_Downloads
-### install Ubuntu Server form - https://www.osboxes.org/
-### install docker form - https://docs.docker.com/engine/install/ubuntu/
-### after installing successfully install Odoo inside docker 
+### Download and install Ubuntu Server form - https://www.osboxes.org/
+### install docker in ubuntu server form - https://docs.docker.com/engine/install/ubuntu/
+### after installing successfully install Odoo inside docker - https://www.digitalocean.com/community/tutorials/how-to-install-odoo-with-docker-on-ubuntu - not follow all steps only till create mkdir
 
 ```
 apt install vim
