@@ -201,5 +201,27 @@ Next logical steps (choose one 👇):
 * Python + XML
 * Client ke hisaab se
 
+<hr>
+
+> # Commands
+
+```
+docker compose version
+apt remove docker-compose -y
+apt install docker-compose-plugin -y
+docker-compose start
+docker ps
+docker-compose logs -f
+docker logs odoo
+ufw status
+ufw allow 8069
+apt install ufw - if have not in ubuntu
+```
+
+## Step 2: Old stopped containers clean karo
+```
+docker container prune -f
+```
+
 
 
