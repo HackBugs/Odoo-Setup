@@ -229,6 +229,7 @@ docker container prune -f
 ```
 
 <hr>
+
 > # Reset Password CMD
 
 ```
@@ -242,5 +243,12 @@ odoo shell -d abc_company --db_host=postgres --db_user=odoo --db_password=odoo12
 env['res.users'].search([('login','=','admin')]).write({'password':'NewAdmin123'}
 ```
 
+> # odoo cofing file inside docker
+
+```
+docker exec -it odoo_app bash
+cat /etc/odoo/odoo.conf
+ls -l /etc/odoo/
+```
 
 
