@@ -33,19 +33,6 @@ cat /usr/bin/odoo
 
 ```
 
-## They are NOT official Odoo Enterprise modules, but they provide Enterprise-like features for free.
-
-```
-https://github.com/OCA
-```
-```
-https://github.com/OCA/account-financial-reporting
-https://github.com/OCA/account-invoicing
-https://github.com/OCA/account-closing
-https://github.com/OCA/account-budgeting
-https://github.com/OCA/account-analytic
-```
-
 Good question 👍
 Straight answer deta hoon, **without ghoomana**.
 
@@ -78,6 +65,12 @@ Ye **most trusted** open-source org hai.
 https://github.com/OCA
 ```
 
+## They are NOT official Odoo Enterprise modules, but they provide Enterprise-like features for free.
+
+```
+https://github.com/OCA
+```
+
 ### 🔸 Accounting repos:
 
 ```
@@ -89,6 +82,20 @@ git clone https://github.com/OCA/account-invoicing.git
 git clone https://github.com/OCA/account-closing.git
 git clone https://github.com/OCA/account-budgeting.git
 git clone https://github.com/OCA/account-analytic.git
+```
+
+## Step 1️⃣: Stop current container (agar already run kar raha hai)
+```
+docker stop odoo_app
+```
+
+## Step 2️⃣: Start container with volume mount
+```
+docker run -d \
+  -p 8069:8069 \
+  -v /home/odoo:/mnt/extra-addons \
+  --name odoo_app \
+  odoo:16
 ```
 
 ---
