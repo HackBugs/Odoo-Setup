@@ -124,6 +124,9 @@ docker run -d \
   -p 8069:8069 \
   -v /home/odoo:/mnt/extra-addons \
   --name odoo_app \
+  -e HOST=odoo_postgres \
+  -e USER=odoo \
+  -e PASSWORD=odoo \
   odoo:15.0
 ```
 
