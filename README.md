@@ -7,7 +7,7 @@
 - https://www.digitalocean.com/community/tutorials/how-to-install-odoo-with-docker-on-ubuntu - not follow all steps only till create mkdir
 
 ```
-http://192.168.0.101:8069/web/
+Cmd > Hostname -I = http://192.168.0.101:8069/web/
 ```
 
 ## 0. instsll all text editor in ubuntu
