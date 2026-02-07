@@ -59,7 +59,7 @@ Same learning + same accounting concepts 💯
 
 Ye **most trusted** open-source org hai.
 
-### 🔸 GitHub org:
+> # 🔸 GitHub org:
 
 ```
 https://github.com/OCA
@@ -97,6 +97,22 @@ docker run -d \
   --name odoo_app \
   odoo:16
 ```
+
+## Step 3️⃣: Odoo UI me install karo
+
+1. Browser → `http://localhost:8069` (ya VM IP + port 8069)
+2. Settings → **Activate Developer Mode**
+3. Apps → **Update Apps List**
+4. Search karo:
+
+   * `Financial Report`
+   * `Invoicing`
+   * `Closing`
+   * `Budget`
+   * `Analytic`
+5. Install karo modules
+
+---
 
 ---
 
