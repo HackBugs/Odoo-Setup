@@ -8,6 +8,9 @@
 
 ```
 Cmd > Hostname -I = http://192.168.0.101:8069/web/
+docker ps
+docker ps -a
+docker start "container id or name"
 ```
 
 ## 0. instsll all text editor in ubuntu
