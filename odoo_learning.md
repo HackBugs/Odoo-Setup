@@ -112,7 +112,9 @@ Tumhara goal:
 ### Step 1️⃣: Stop current container (agar already run kar raha hai)
 
 ```bash
-docker stop odoo_app
+docker stop 9b93796404d1
+docker rm 9b93796404d1
+
 ```
 
 ### Step 2️⃣: Start container with volume mount
@@ -122,7 +124,7 @@ docker run -d \
   -p 8069:8069 \
   -v /home/odoo:/mnt/extra-addons \
   --name odoo_app \
-  odoo:16
+  odoo:15.0
 ```
 
 * `/home/odoo` → host (Ubuntu) folder jahan modules hain
