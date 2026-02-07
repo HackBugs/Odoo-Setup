@@ -25,6 +25,11 @@ Look like this
 /odoo/odoo/addons/publisher_warranty/models/publisher_warranty.py
 /usr/lib/python3/dist-packages/odoo/addons/publisher_warranty/models/publisher_warranty.py
 
+ps aux | grep odoo
+docker exec -it odoo_app bash
+ls -l /usr/bin/odoo
+cat /usr/bin/odoo
+
 ```
 
 ## They are NOT official Odoo Enterprise modules, but they provide Enterprise-like features for free.
@@ -75,11 +80,14 @@ https://github.com/OCA
 ### 🔸 Accounting repos:
 
 ```
-https://github.com/OCA/account-financial-reporting
-https://github.com/OCA/account-invoicing
-https://github.com/OCA/account-closing
-https://github.com/OCA/account-budgeting
-https://github.com/OCA/account-analytic
+OCA (Open Source Community Addons) se kya mil jata hai?
+
+cd /opt/odoo/custom-addons
+git clone https://github.com/OCA/account-financial-reporting.git
+git clone https://github.com/OCA/account-invoicing.git
+git clone https://github.com/OCA/account-closing.git
+git clone https://github.com/OCA/account-budgeting.git
+git clone https://github.com/OCA/account-analytic.git
 ```
 
 ---
