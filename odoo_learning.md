@@ -1,4 +1,5 @@
 > # After Installation odoo install these apps
+> Enterprise odoo crack
 1. Contacts
 2. Invoicing   ← (instead of Accounting)
 3. Sales
