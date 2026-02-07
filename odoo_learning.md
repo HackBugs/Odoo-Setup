@@ -124,10 +124,17 @@ docker run -d \
   -p 8069:8069 \
   -v /home/odoo:/mnt/extra-addons \
   --name odoo_app \
+  --network odoo_default \
   -e HOST=odoo_postgres \
   -e USER=odoo \
-  -e PASSWORD=odoo \
+  -e PASSWORD=odoo123 \
   odoo:15.0
+```
+
+```
+docker network ls
+docker inspect odoo_postgres
+docker network create odoo-net
 ```
 
 * `/home/odoo` → host (Ubuntu) folder jahan modules hain
