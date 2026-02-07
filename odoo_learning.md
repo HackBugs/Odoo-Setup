@@ -89,8 +89,35 @@ git clone https://github.com/OCA/account-analytic.git
 docker stop odoo_app
 ```
 
-## Step 2️⃣: Start container with volume mount
+Perfect 👌
+
+Ab tumhare paas **sab OCA accounting modules Ubuntu VM me download ho gaye** hain:
+
 ```
+/home/odoo/
+ ├─ account-analytic/
+ ├─ account-budgeting/
+ ├─ account-closing/
+ ├─ account-financial-reporting/
+ └─ account-invoicing/
+```
+
+---
+
+## 🔹 NEXT STEP: Docker container me Odoo se connect karna
+
+Tumhara goal:
+**Docker Odoo container ko ye addons folder read kar sake.**
+
+### Step 1️⃣: Stop current container (agar already run kar raha hai)
+
+```bash
+docker stop odoo_app
+```
+
+### Step 2️⃣: Start container with volume mount
+
+```bash
 docker run -d \
   -p 8069:8069 \
   -v /home/odoo:/mnt/extra-addons \
@@ -98,7 +125,13 @@ docker run -d \
   odoo:16
 ```
 
-## Step 3️⃣: Odoo UI me install karo
+* `/home/odoo` → host (Ubuntu) folder jahan modules hain
+* `/mnt/extra-addons` → Docker container me addons path
+* Odoo automatically `/mnt/extra-addons` read karta hai
+
+---
+
+### Step 3️⃣: Odoo UI me install karo
 
 1. Browser → `http://localhost:8069` (ya VM IP + port 8069)
 2. Settings → **Activate Developer Mode**
@@ -114,7 +147,17 @@ docker run -d \
 
 ---
 
----
+### Step 4️⃣: Confirm
+
+Apps install hone ke baad:
+
+* Accounting → Reporting → **Trial Balance / P&L / Balance Sheet**
+* Vendor / Customer Invoice workflow
+* Budget & Analytic accounting
+
+Sab ready hai **Enterprise jaise practice ke liye**, **100% legal & free** ✅
+
+<hr>
 
 ## 🔹 2️⃣ MOST IMPORTANT FREE MODULES (Accountant Practice)
 
